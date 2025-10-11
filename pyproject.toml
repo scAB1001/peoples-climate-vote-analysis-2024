@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "comp5122m"
+version = "0.1.0"
+description = "COMP5122M Course Project"
+authors = ["Andreas Bazigos <sc222ab@leeds.ac.uk>"]
+readme = "README.md"
+package-mode = false 
+
+[tool.poetry.dependencies]
+python = "^3.12"
+numpy = "*"
+pandas = "*"
+matplotlib = "*"
+seaborn = "*"
+scikit-learn = "*"
+scipy = "*"
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "*"
+ipykernel = "*"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
