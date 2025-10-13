@@ -1,0 +1,24 @@
+[project]
+name = "comp5122m"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Andreas Bazigos",email = "sc222ab@leeds.ac.uk"}
+]
+package-mode = false
+readme = "README.md"
+requires-python = ">=3.11"  # ← Match your actual Python 3.12
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "seaborn",
+    "jupyter (>=1.1.1,<2.0.0)",
+    "ipykernel (>=6.30.1,<7.0.0)",
+    "plotly (>=6.3.1,<7.0.0)",
+    "google (>=3.0.0,<4.0.0)"
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
