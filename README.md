@@ -108,4 +108,24 @@ poetry install
 #### Commands
 ```bash
 jupyter-notebook
-``` 
+```
+
+# Install ipykernel in the Poetry environment
+poetry add ipykernel
+
+# Register the Poetry environment as a Jupyter kernel
+python -m ipykernel install --user --name=poetry-climate-env --display-name="Poetry Climate Env"
+
+# Exit the poetry shell
+exit
+
+# Run the command directly using poetry run
+poetry run python -m ipykernel install --user --name=poetry-climate-env --display-name="Poetry Climate Env"
+
+# List available Jupyter kernels
+jupyter kernelspec list
+
+Available kernels:
+  comp5122m             /uolstore/home/student_lnxhome01/sc222ab/.local/share/jupyter/kernels/comp5122m
+  poetry-climate-env    /uolstore/home/student_lnxhome01/sc222ab/.local/share/jupyter/kernels/poetry-climate-env
+  python3               /uolstore/home/student_lnxhome01/sc222ab/.local/share/jupyter/kernels/python3
