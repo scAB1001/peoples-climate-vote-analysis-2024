@@ -1,6 +1,6 @@
 #!/bin/bash
 # Nav to Data Science dir
-cd ./code/comp5122m/
+cd ~/code/comp5122m/labs
 
 # Ensure compatible version in use
 pyenv local 3.12.12
