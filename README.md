@@ -1,6 +1,7 @@
 # comp5122m
 
 ### Install python versions with pyenv
+
 ```bash
 # Install pyenv if not already installed
 curl https://pyenv.run | bash
@@ -19,6 +20,7 @@ pyenv install 3.14.0
 ```
 
 #### Commands
+
 ```bash
 # Set versions for your project
 pyenv global 3.10.12
@@ -31,6 +33,7 @@ python --version
 ```
 
 ### pyproject.toml
+
 ```bash
 [project]
 name = "comp5122m"
@@ -48,7 +51,10 @@ dependencies = [
     "matplotlib",
     "seaborn",
     "scikit-learn",
-    "scipy"
+    "scipy",
+    "openpyxl",
+    "ipykernel"
+
 ]
 
 [build-system]
@@ -57,6 +63,7 @@ build-backend = "poetry.core.masonry.api"
 ```
 
 #### Commands
+
 ```bash
 python3 -m pip install poetry
 poetry init
@@ -86,46 +93,50 @@ poetry install
 ```
 
 ### JupyterLab configuration
+
 "shortcuts": [
-        {
-            "command": "notebook:clear-all-cell-outputs",
-  "keys": [
+  {
+    "command": "notebook:clear-all-cell-outputs",
+    "keys": [
     "Shift C",
     "Shift C"
-  ],
-  "selector": ".jp-Notebook:focus"
-        },
-    {
-     "command": "notebook:clear-cell-output",
-  "keys": [
+    ],
+    "selector": ".jp-Notebook:focus"
+  },
+  {
+    "command": "notebook:clear-cell-output",
+    "keys": [
     "Shift J",
     "Shift J"
-  ],
-  "selector": ".jp-Notebook:focus"
-    },
+    ],
+    "selector": ".jp-Notebook:focus"
+  },
 ]
 
 #### Commands
+
 ```bash
+# redhat
 jupyter-notebook
+
+# linux mint 22.2
+poetry run jupyter-notebook
 ```
 
-# Install ipykernel in the Poetry environment
-poetry add ipykernel
+### Local Development
 
+```bash
 # Register the Poetry environment as a Jupyter kernel
 python -m ipykernel install --user --name=poetry-climate-env --display-name="Poetry Climate Env"
-
-# Exit the poetry shell
-exit
 
 # Run the command directly using poetry run
 poetry run python -m ipykernel install --user --name=poetry-climate-env --display-name="Poetry Climate Env"
 
 # List available Jupyter kernels
 jupyter kernelspec list
+```
 
 Available kernels:
-  comp5122m             /uolstore/home/student_lnxhome01/sc222ab/.local/share/jupyter/kernels/comp5122m
-  poetry-climate-env    /uolstore/home/student_lnxhome01/sc222ab/.local/share/jupyter/kernels/poetry-climate-env
-  python3               /uolstore/home/student_lnxhome01/sc222ab/.local/share/jupyter/kernels/python3
+- comp5122m /uolstore/home/student_lnxhome01/sc222ab/.local/share/jupyter/kernels/comp5122m
+- poetry-climate-env /uolstore/home/student_lnxhome01/sc222ab/.local/share/jupyter/kernels/poetry-climate-env
+- python3 /uolstore/home/student_lnxhome01/sc222ab/.local/share/jupyter/kernels/python3
