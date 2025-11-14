@@ -63,7 +63,7 @@ build-backend = "poetry.core.masonry.api"
 ```
 
 #### Commands
-
+c
 ```bash
 python3 -m pip install poetry
 poetry init
