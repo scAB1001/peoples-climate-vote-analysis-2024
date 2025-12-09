@@ -16,13 +16,13 @@ print( f"SciKit-Learn version: {sklearn.__version__}\N")
 X, y = make_blobs(random_state=1)
 
 # build the clustering model
-kmeans = KMeans(n_clusters=3)   
+kmeans = KMeans(n_clusters=3)
 kmeans.fit(X)
 
 # predict the cluster for each data point
 y_kmeans = kmeans.predict(X); print("Predicted cluster memberships:\n{}".format(y_kmeans))
 
-# Each training data point in X is assigned a cluster label. 
+# Each training data point in X is assigned a cluster label.
 # You can find these labels in the kmeans.labels_ attribute:
 print("Cluster memberships:\n{}".format(kmeans.labels_))
 
@@ -38,4 +38,3 @@ plt.title('KMeans Clustering Results')
 
 plt.show()
 print("KMeans clustering completed and visualized successfully!")
-
