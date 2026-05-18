@@ -5,7 +5,7 @@ __pycache__/
 *.egg-info/
 *.lock
 .ipynb_checkpoints/
-*.xlsx
+data/*.xlsx
 # .python-version
 # TODO: FIX
 other/
