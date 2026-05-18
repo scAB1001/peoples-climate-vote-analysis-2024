@@ -1,5 +1,10 @@
+.venv/
 .vscode/
-./z.py
 __pycache__/
 *.pyc
-
+*.egg-info/
+*.lock
+.ipynb_checkpoints/
+*.xlsx
+# .python-version
+# TODO: FIX
