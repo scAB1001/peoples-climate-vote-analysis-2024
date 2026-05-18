@@ -1,0 +1,23 @@
+[project]
+name = "comp5122m"
+version = "0.1.0"
+description = "2024 People's Climate Vote Data Analysis"
+authors = [
+    {name = "Andreas Bazigos", email = "sc222ab@leeds.ac.uk"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastparquet>=2026.5.0",
+    "ipykernel>=7.2.0",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.10.9",
+    "numpy>=2.4.4",
+    "openpyxl>=3.1.5",
+    "pandas>=3.0.2",
+    "plotly>=6.7.0",
+    "pyarrow>=24.0.0",
+    "scikit-learn>=1.8.0",
+    "scipy>=1.17.1",
+    "seaborn>=0.13.2",
+]
